@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Comfortaa, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boxClima{
+    border: 1px solid black;
+    width: 50%;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+.clouds{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.climaH{
+    text-align: center;
+    border-bottom: 1px solid black;
+    height: 60px;
+    padding-top: 10px;
+    font-size: 1.35em;
+}
+
+.contenedor{
+    height: 320px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 50px 2fr 1fr 1fr;
+    border-bottom: 1px solid black;
+}
+.cidade,.data,.png,.temp,.descricao,.minM,.vento{
+    text-align: center;
+}
+.cidade{
+    grid-row: 1 / span 1;
+    padding-top: 10px;
+    font-size: 1.4em;
+    margin: 5px 0 10px 0;
+}
+.data{
+    grid-row: 2 / span 1;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+.pngCont{
+    grid-row: 3 / span 1;
+    /*border: 1px solid blue;*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: -5px;
+}
+.temp{
+    height: 50px;
+    grid-row: 4 / span 1;
+    display: flex;
+    border: 1px solid black;
+    width: 40%;
+    margin: auto;
+    font-size: 1.6em;
+    justify-content: center;
+    align-items: center;
+}
+.descricao{
+    margin-top: 18px;
+    grid-row: 5 / span 1;
+}
+.minM{
+    grid-row: 6 / span 1;
+    margin-bottom: 20px;
+}
+.vento{
+    grid-row: 7 / span 1;
+    margin-bottom: 20px;
+}
+.busca{
+    padding: 13px 0 0 12px;
+    width: 100%;
+    height: 70px;
+}
+.input{
+    height: 25px;
+    width: 150px;
+}
+
+@media only screen and (max-width: 800px) {
+    .boxClima{
+        width: 100%;
+    }
+}

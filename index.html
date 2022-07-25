@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clima</title>
+</head>
+<body>
+    <div class="boxClima">
+        <img src="./icons/clouds.jpg" alt="" class="clouds">
+        <div class="climaH">Clima na sua <br> Area</div>
+        <div class="contenedor">
+            <div class="cidade">Cidade</div>
+            <div class="data">Data</div>
+            <div class="pngCont">
+                <img src="./icons/unknown.png" width="70" alt="" srcset="">
+            </div>
+            <div class="temp">
+                <p class="graus">0</p>
+                <p class="medida">°C</p>
+            </div>
+            <div class="descricao"></div>
+            <div class="minM"></div>
+            <div class="vento"></div>
+        </div>
+        <div class="busca">
+            <input class="input" type="text" placeholder="Digite a cidade">
+            <button class="inputB">Procurar</button>
+            <button class="current">Minha localização</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
